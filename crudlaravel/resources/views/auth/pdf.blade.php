@@ -22,6 +22,9 @@
             background-color: rgb(167, 212, 251);
             font-size: 0.8em
         }
+        h1{
+            text-align: center;
+        }
     </style>
    <h1>Informacion de usuario</h1>
 
