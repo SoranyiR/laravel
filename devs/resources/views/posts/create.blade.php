@@ -20,9 +20,9 @@
             @csrf 
             <div class="mb-5" >
                 <label for="titulo" class="mb-2 block uppercase text-gray-500 font-bold">tituloo</label>
-                <input type="text" id="titulo" placeholder="Titulo" class="border p-3 w-full rounded-lg @error('titulo') border-red-500
+                <input type="text" id="titulo" name="titulo" placeholder="Titulo" class="border p-3 w-full rounded-lg @error('titulo') border-red-500
                 @enderror" value="{{old('titulo')}}">
-                @error('name')
+                @error('titulo')
                 <p class="bg-red-500 text-white rounded-lg my-2 text-sm text-center">{{ $message }}</p>
                 @enderror
 
@@ -32,9 +32,9 @@
                 <label for="descripcion" class="mb-2 block uppercase text-gray-500 font-bold">Descripcion de la publicacion</label>
 
                 <textarea id="descripcion" name="descripcion" placeholder="Descripcion de la publicacion" class="border p-3 w-full rounded-lg 
-                 @error('titulo') border-red-500 @enderror " >{{old('titulo')}}</textarea>
+                 @error('descripcion') border-red-500 @enderror " ></textarea>
 
-                @error('name')
+                @error('descripcion')
                 <p class="bg-red-500 text-white rounded-lg my-2 text-sm text-center">{{ $message }}</p>
                 @enderror
             </div>
