@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::get('/', function () {
 
 Route::get('/registro', [UsuarioController::class, 'mostrarFormularioRegistro'])->name('registro');
 Route::post('/registrar-usuario', [UsuarioController::class, 'registrarUsuario'])->name('registrarUsuario');
+
+Route::get('/admin/registrar-profesor', [AdminController::class, 'showRegistrarProfesorForm'])->name('registrar_profesor');
+Route::post('/admin/registrar-profesor', [AdminController::class, 'registrarProfesor']);

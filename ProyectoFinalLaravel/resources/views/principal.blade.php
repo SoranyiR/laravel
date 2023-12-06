@@ -35,7 +35,7 @@
     </h1>
     @yield('contenido')
     <div class=" aling-center">
-        <img src="img/Laravel.jpg" alt="" class="mx-auto d-block">
+        <img src="img/laravel.jpg" alt="" class="mx-auto d-block">
     </div>
     
 </main>

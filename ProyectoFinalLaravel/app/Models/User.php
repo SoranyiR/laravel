@@ -24,6 +24,7 @@ class User extends Authenticatable
         'contraseña',
         'rol',
         'fechanacimiento',
+        'area',
     ];
 
     /**

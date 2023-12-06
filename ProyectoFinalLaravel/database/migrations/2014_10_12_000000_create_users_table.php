@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('contraseña');
             $table->enum('rol',["administrador","profesor","estudiante"]);
             $table->date('fechanacimiento');
+            $table->string('area');
             $table->rememberToken();
             $table->timestamps();
         });
